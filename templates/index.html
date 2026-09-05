@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Keyona Briggs | Cybersecurity Portfolio</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600&display=swap"
+          rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+
+<nav class="navbar">
+
+    <a href="#" class="logo">
+        KB.
+    </a>
+
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+</nav>
+
+
+<!-- ================= HERO ================= -->
+
+<header class="hero">
+
+    <div class="hero-photo">
+
+        <!-- Put your picture in static/images/profile.jpg -->
+
+        <img
+            src="{{ url_for('static', filename='images/profile.jpg') }}"
+            alt="Keyona Briggs"
+        >
+
+    </div>
+
+    <p class="eyebrow">
+    CYBERSECURITY PROFESSIONAL
+</p>
+
+<h1>
+    Keyona Briggs
+</h1>
+
+<h2>
+    Cybersecurity | IT | Security Operations
+</h2>
+
+<p class="hero-description">
+    Cybersecurity professional with certifications spanning
+    security, networking, IT support, Linux, and project
+    management. Currently expanding my expertise through
+    CySA+ and PenTest+ studies.
+</p>
+
+
+    <div class="hero-buttons">
+
+        <a href="#projects" class="button primary">
+            View My Work
+        </a>
+
+        <a href="{{ url_for('static', filename='resume.pdf') }}"
+        class="button secondary"
+        target="_blank">
+        Resume
+        </a>
+
+    </div>
+
+    <div class="socials">
+
+        <a href="https://www.linkedin.com/in/briggskeyona" target="_blank" rel="noopener noreferrer">
+            LinkedIn
+        </a>
+
+
+        <a href="https://github.com/briggskeyona" target="_blank" rel="noopener noreferrer">
+            GitHub
+        </a>
+
+        <a href="mailto:briggs_keyona@yahoo.com">
+            Email
+        </a>
+
+    </div>
+
+</header>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section id="about" class="section">
+
+    <div class="section-header">
+
+        <span>01</span>
+
+        <h2>About Me</h2>
+
+    </div>
+
+    <div class="about-content">
+
+        <div>
+            <p>
+                Hello! I'm Keyona, a cybersecurity
+                professional currently building practical experience
+                in security operations and information assurance.
+            </p>
+
+            <p>
+                My interests include threat detection, incident
+                response, Linux administration, log analysis,
+                networking, and security automation.
+            </p>
+
+            <p>
+                I enjoy learning through hands-on labs and projects
+                that simulate real-world cybersecurity environments.
+            </p>
+        </div>
+
+        <div class="about-highlight">
+
+            <span>CURRENTLY LEARNING</span>
+
+            <strong>
+                Security Operations
+            </strong>
+
+            <strong>
+                Threat Detection
+            </strong>
+
+            <strong>
+                Penetration Testing
+            </strong>
+
+            <strong>
+                Python Security Automation
+            </strong>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CERTIFICATIONS ================= -->
+
+<section id="certifications"
+         class="section certifications-section">
+
+    <div class="section-header">
+        <span>02</span>
+        <h2>Certifications</h2>
+    </div>
+
+    <p class="section-intro">
+        Industry-recognized certifications supporting my
+        foundation in cybersecurity, networking, IT, Linux,
+        and project management.
+    </p>
+
+    <div class="certification-grid">
+
+        <div class="certification">
+            <div class="cert-icon">Sec+</div>
+            <h3>CompTIA Security+</h3>
+            <p>Security fundamentals</p>
+        </div>
+
+        <div class="certification">
+            <div class="cert-icon">Net+</div>
+            <h3>CompTIA Network+</h3>
+            <p>Networking fundamentals</p>
+        </div>
+
+        <div class="certification">
+            <div class="cert-icon">A+</div>
+            <h3>CompTIA A+</h3>
+            <p>IT fundamentals</p>
+        </div>
+
+        <div class="certification">
+            <div class="cert-icon">Linux</div>
+            <h3>Linux</h3>
+            <p>Linux administration</p>
+        </div>
+
+        <div class="certification">
+            <div class="cert-icon">ITIL</div>
+            <h3>ITIL</h3>
+            <p>IT service management</p>
+        </div>
+
+        <div class="certification">
+            <div class="cert-icon">Project+</div>
+            <h3>CompTIA Project+</h3>
+            <p>Project management</p>
+        </div>
+
+    </div>
+
+
+    <div class="in-progress">
+
+        <div class="in-progress-heading">
+            <span>CONTINUING EDUCATION</span>
+            <span class="pulse"></span>
+        </div>
+
+        <div class="current-certifications">
+
+            <div class="current-cert">
+                <div>
+                    <small>IN PROGRESS</small>
+                    <h3>CompTIA CySA+</h3>
+                </div>
+
+                <span>CYBERSECURITY ANALYTICS</span>
+            </div>
+
+            <div class="current-cert">
+                <div>
+                    <small>IN PROGRESS</small>
+                    <h3>CompTIA PenTest+</h3>
+                </div>
+
+                <span>PENETRATION TESTING</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ================= PROJECTS ================= -->
+
+<section id="projects"
+         class="section">
+
+    <div class="section-header">
+
+        <span>03</span>
+
+        <h2>Projects</h2>
+
+    </div>
+
+    <p class="section-intro">
+        Hands-on projects demonstrating my cybersecurity,
+        technical, and problem-solving skills.
+    </p>
+
+
+    <div class="projects">
+
+
+        <!-- PROJECT 1 -->
+
+        <article class="project-card">
+
+            <div class="project-top">
+
+                <span class="project-number">
+                    PROJECT 01
+                </span>
+
+                <span class="project-type">
+                    SOC / SIEM
+                </span>
+
+            </div>
+
+            <h3>
+                SOC Level 1 Alert Triage
+            </h3>
+
+            <p>
+            SOC Alert Investigation Lab
+Investigated simulated authentication alerts to identify brute-force activity, analyzed supporting logs, determined severity, and documented the investigation and recommended response.
+</p>
+
+            <div class="tags">
+
+                <span>SIEM</span>
+                <span>Alert Triage</span>
+                <span>Threat Detection</span>
+                <span>Incident Response</span>
+
+            </div>
+
+            <button
+                class="details-button"
+                onclick="toggleProject('project1')">
+
+                View Project Details
+                <span>+</span>
+
+            </button>
+
+
+            <div id="project1"
+                 class="project-details">
+
+                <h4>Objective</h4>
+
+                <p>
+                    Practice the responsibilities of a Level 1
+                    SOC analyst by investigating alerts and
+                    determining whether activity was benign,
+                    suspicious, or malicious.
+                </p>
+
+                <h4>Process</h4>
+
+                <ul>
+                    <li>Reviewed incoming security alerts</li>
+                    <li>Prioritized alerts based on severity</li>
+                    <li>Investigated available evidence</li>
+                    <li>Analyzed user and host activity</li>
+                    <li>Classified alerts</li>
+                    <li>Documented investigation findings</li>
+                </ul>
+
+                <h4>Skills Demonstrated</h4>
+
+                <p>
+                    SOC operations, alert triage, log analysis,
+                    threat detection, SIEM investigation,
+                    documentation, and incident analysis.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- PROJECT 2 -->
+
+        <article class="project-card">
+
+            <div class="project-top">
+
+                <span class="project-number">
+                    PROJECT 02
+                </span>
+
+                <span class="project-type">
+                    LINUX / BASH
+                </span>
+
+            </div>
+
+            <h3>
+                Linux Log Analysis Pipeline
+            </h3>
+
+            <p>
+                Created an automated Bash pipeline to collect
+                Linux system information, analyze logs, and
+                generate structured reports.
+            </p>
+
+            <div class="tags">
+
+                <span>Linux</span>
+                <span>Bash</span>
+                <span>Python</span>
+                <span>Log Analysis</span>
+
+            </div>
+
+            <button
+                class="details-button"
+                onclick="toggleProject('project2')">
+
+                View Project Details
+                <span>+</span>
+
+            </button>
+
+
+            <div id="project2"
+                 class="project-details">
+
+                <h4>Objective</h4>
+
+                <p>
+                    Develop a command-line based workflow for
+                    collecting and analyzing Linux security data.
+                </p>
+
+                <h4>Tools</h4>
+
+                <ul>
+                    <li>Kali Linux</li>
+                    <li>Bash</li>
+                    <li>Python</li>
+                    <li>SQL</li>
+                    <li>Linux command-line tools</li>
+                </ul>
+
+                <h4>Outcome</h4>
+
+                <p>
+                    Built a repeatable process for collecting
+                    system information, analyzing logs, and
+                    producing structured security reports.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- PROJECT 3 -->
+
+        <article class="project-card">
+
+            <div class="project-top">
+
+                <span class="project-number">
+                    PROJECT 03
+                </span>
+
+                <span class="project-type">
+                    NETWORK SECURITY
+                </span>
+
+            </div>
+
+            <h3>
+                Network Security Lab
+            </h3>
+
+            <p>
+                A hands-on laboratory environment focused on
+                networking, traffic analysis, and security
+                fundamentals.
+            </p>
+
+            <div class="tags">
+
+                <span>Networking</span>
+                <span>TCP/IP</span>
+                <span>Wireshark</span>
+                <span>Security</span>
+
+            </div>
+
+            <button
+                class="details-button"
+                onclick="toggleProject('project3')">
+
+                View Project Details
+                <span>+</span>
+
+            </button>
+
+
+            <div id="project3"
+                 class="project-details">
+
+                <h4>Objective</h4>
+
+                <p>
+                    Build practical knowledge of network traffic
+                    and identify potentially suspicious activity.
+                </p>
+
+                <h4>Skills</h4>
+
+                <ul>
+                    <li>Packet analysis</li>
+                    <li>TCP/IP</li>
+                    <li>Network troubleshooting</li>
+                    <li>Security monitoring</li>
+                </ul>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SKILLS ================= -->
+
+<section id="skills"
+         class="section skills-section">
+
+    <div class="section-header">
+
+        <span>04</span>
+
+        <h2>Technical Skills</h2>
+
+    </div>
+
+
+    <div class="skill-grid">
+
+        <div class="skill-category">
+
+            <h3>Cybersecurity</h3>
+
+            <div class="skill-tags">
+
+                <span>Threat Detection</span>
+                <span>Incident Response</span>
+                <span>SIEM</span>
+                <span>Alert Triage</span>
+                <span>Log Analysis</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="skill-category">
+
+            <h3>Technical</h3>
+
+            <div class="skill-tags">
+
+                <span>Linux</span>
+                <span>Python</span>
+                <span>Bash</span>
+                <span>SQL</span>
+                <span>Networking</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="skill-category">
+
+            <h3>Tools</h3>
+
+            <div class="skill-tags">
+
+                <span>Kali Linux</span>
+                <span>Wireshark</span>
+                <span>Git</span>
+                <span>TryHackMe</span>
+
+            </div>
+
+        </div>
+
+
+        <div class="skill-category">
+
+            <h3>Professional</h3>
+
+            <div class="skill-tags">
+
+                <span>Problem Solving</span>
+                <span>Documentation</span>
+                <span>Communication</span>
+                <span>Continuous Learning</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section id="contact"
+         class="contact-section">
+
+    <div class="contact-inner">
+
+        <p class="eyebrow">
+            LET'S CONNECT
+        </p>
+
+        <h2>
+            Building my career<br>
+            <em>one project at a time.</em>
+        </h2>
+
+        <p>
+            I'm currently open to cybersecurity internships,
+            entry-level opportunities, collaborations, and
+            professional connections.
+        </p>
+
+        <div class="contact-buttons">
+
+            <a href="mailto:briggs_keyona@yahoo.com"
+               class="button primary">
+                Email Me
+            </a>
+
+            <a href="https://www.linkedin.com/in/briggskeyona"
+            class="button secondary"
+            target="_blank"
+            rel="noopener noreferrer">
+                LinkedIn
+            </a>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div>
+        © 2026 Keyona Briggs. All rights reserved.
+    </div>
+
+    <div>
+        Cybersecurity Portfolio
+    </div>
+
+</footer>
+
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
